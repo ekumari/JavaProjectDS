@@ -81,6 +81,25 @@ Suggestions based on 'anj' are
 Anjali
 Anjani
 ```
+**Invalid Input**
+
+```
+Enter a string to be search
+dhai jl
+Invalid input. Please enter only alphabets!!
+-------------------------
+Enter a string to be search
+12
+Invalid input. Please enter only alphabets!!
+-------------------------
+Enter a string to be search
+12ruie
+Invalid input. Please enter only alphabets!!
+-------------------------
+Enter a string to be search
+@@
+Invalid input. Please enter only alphabets!!
+```
 
 **If string doesn't exist**
 
