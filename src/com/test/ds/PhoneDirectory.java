@@ -50,11 +50,11 @@ public class PhoneDirectory {
             prefix += word.charAt(i);
             TrieNode node = current.child.get(ch);
             if(node == null){
-                System.out.println("No result found for "+prefix);
+                System.out.println("No result found for '"+prefix+"'");
                 i++;
                 break;
             }
-            System.out.println("Suggestions based on "+ prefix + " are");
+            System.out.println("Suggestions based on '"+ prefix + "' are");
                     displayContactsUtil(node, prefix);
             current = node;
         }
@@ -62,7 +62,7 @@ public class PhoneDirectory {
         for ( ; i < word.length(); i++)
         {
             prefix += word.charAt(i);
-            System.out.println("No Results Found for "+ prefix);
+            System.out.println("No Results Found for '"+ prefix+"'");
         }
     }
 
@@ -92,14 +92,14 @@ public class PhoneDirectory {
         String searchString;
             do{
                 System.out.println("-------------------------");
-                System.out.println("Enter string to be search");
+                System.out.println("Enter a string to be search");
                 searchString = myObj.nextLine();
+                if(searchString.compareToIgnoreCase("exit") == 0 || searchString.compareToIgnoreCase("quit") == 0 ){
+                    break;
+                }
                 if (!searchString.matches("[a-zA-Z_]+")) {
                     System.out.println("Invalid input. Please enter only alphabets!!");
                     continue;
-                }
-                if(searchString.compareToIgnoreCase("exit") == 0 || searchString.compareToIgnoreCase("quit") == 0 ){
-                    break;
                 }else{
                     String contacts[] = {"Anjani","Anand","Anandi","Manisha", "Anup", "Aditya", "Manish", "Monika","Anjali"};
                     PhoneDirectory ph = new PhoneDirectory();

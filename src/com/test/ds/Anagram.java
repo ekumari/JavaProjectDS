@@ -31,7 +31,7 @@ public class Anagram {
     }
 
     public static void main(String args[]){
-        String arr[] = { "cat", "dog", "tac", "god", "act", "pan"};
+        String arr[] = { "cat", "dog", "tac", "god", "act"};
         findGroupAnagram(arr);
     }
 }
