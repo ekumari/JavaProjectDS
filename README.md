@@ -36,6 +36,7 @@ Enter a string to be search
 - Anj or anj (You can enter any case lower or upper)
 
 **It will return all the search string based on each charater you entered.**
+```
 Enter a string to be search
 Anj
 
@@ -79,16 +80,22 @@ Anup
 Suggestions based on 'anj' are
 Anjali
 Anjani
+```
 
 **If string doesn't exist**
+
+```
 Enter a string to be search
 ga
 No result found for 'g'
 No Results Found for 'ga'
+```
 
 **Want to quit the program, then Enter exit or quit.**
+```
 Enter a string to be search
 - exit or EXIT or quit or QUIT
+```
 
 
 
